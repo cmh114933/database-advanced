@@ -35,48 +35,7 @@
 ---
 
 ### Exercise 1
-- Address Book
-
-+++
-
-### Requirements Part 1 : Initializing
-- Create an `address_book` database
-- Create an `address_book` table and columns, based on the provided schema
-    - using queries
-- A contact has the following
-    - id : integer
-    - first_name: string
-    - last_name: string
-    - email: string
-    - birthday: string
-    - contact_no: string
-    
-+++
-
-### Requirements Part 2: Modifying (Use queries)
-- Alter the schema
-    - email cannot be null
-    - birthday is not string type
-- rename table name to `contacts`
-- Add new columns 
-    - created_at: datetime
-    - updated_at: datetime
-- remove some errorneous columns 
-    - last_name
-- rename first_name => full_name
-
-+++ 
-
-### Requirements Part 3: Access, Insert, Remove, Update Data
-- Insert 2 rows of contacts
-- Delete the first row
-- Execute seed script
-- Find the number of contacts for each of the following 
-    - education institutes
-    - government
-- Empty the contact_no for contacts
-    - whose second word starts with B
-    - AND whose first word starts with A or B or C
+- [Address Book](https://school.nextacademy.com/courses/backend-web-development-java/lessons/3304)
 
 ---
 
@@ -86,7 +45,7 @@ Exercise 2: Advanced Querying
 +++
 
 - Steps
-    1. Execute seed [script]()
+    1. Execute seed script
     2. [Query data lesson](https://school.nextacademy.com/courses/backend-web-development-java/lessons/3278)
     3. [Modify data lesson](https://school.nextacademy.com/courses/backend-web-development-java/lessons/3279)
 
@@ -131,7 +90,11 @@ export class User {
     @PrimaryGeneratedColumn()
     id: number
 }
-// -----------
+```
+
++++
+
+```js
 @Entity()
 export class UserProfile {
 
@@ -157,7 +120,11 @@ export class Author {
     @OneToMany(type => Book, book => book.author)
     books: Book[]
 }
-// -----------
+```
+
++++
+
+```js
 @Entity()
 export class Book {
 
@@ -183,7 +150,11 @@ export class Employee {
     @ManyToMany(type => Project, project => project.employees)
     projects: Project[]
 }
-// -----------
+```
+
++++
+
+```js
 @Entity()
 export class Project {
 
