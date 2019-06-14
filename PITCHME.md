@@ -53,6 +53,37 @@ Exercise 2: Advanced Querying
 
 ### TypeORM: Migration Management
 
++++
+
+#### Migrations are changes to your database that are:
+- Incremental
+- Reversible
+- Separate 
+
++++
+
+#### Setup
+```js
+// 
+npm install -g typeorm
+// 
+typeorm init --name ProjectName --database mssql
+```
+
++++
+
+#### SQL Server Setup
+
+- Open SQL Server Configuration Manager
+    - If you cannot find it
+    - use Run -> `compmgmt.msc`
+    - expand 'Services And Applications'
+- Find `SQL Server Network Configuration`
+- Find `TCP/IP` and Enable it
+- Right click `TCP/IP` 
+    - set IP Address 127.0.0.1 to Enabled
+    - set IP Address 127.0.0.1 to TCP Port 1433
+
 ---
 
 #### Entities
@@ -176,27 +207,6 @@ export class Project {
 ```
 
 ---
-
-### Migrations with TypeORM
-
-+++
-
-#### Migrations are changes to your database that are:
-- Incremental
-- Reversible
-- Separate 
-
-+++
-
-#### Setup
-```js
-// 
-npm install -g typeorm
-// 
-typeorm init --name ProjectName --database mssql
-```
-
-+++
 
 #### Migration Commands
 ```js
