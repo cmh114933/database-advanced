@@ -87,6 +87,23 @@ typeorm init --name ProjectName --database mssql
 - Right click `TCP/IP` 
     - set IP Address 127.0.0.1 to Enabled
     - set IP Address 127.0.0.1 to TCP Port 1433
+    
++++
+
+#### SQL Server Setup
+- In SQL Server Management Studio
+    - Expand `Security`
+    - Right Click `Login` -> `New Login`
+    - Set `username` and `password`
+    - Under `Server Roles`, tick `sysadmin`
+    
++++
+
+#### SQL Server Setup
+- In SQL Server Management Studio
+    - Right Click the server -> `Properties`
+    - Click `Security`
+    - Set `SQL Server and Windows Authentication`
 
 ---
 
