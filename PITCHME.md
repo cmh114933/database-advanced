@@ -64,9 +64,9 @@ Exercise 2: Advanced Querying
 +++
 
 - Find `SQL Server Network Configuration`
-- Find `TCP/IP` and Enable it
+- Find _TCP/IP_ and Enable it
 - Right click `TCP/IP` 
-    - set IP Address 127.0.0.1 to Enabled
+    - set IP Address 127.0.0.1 to _Enabled_
     - set IP Address 127.0.0.1 to TCP Port 1433
     
 +++
