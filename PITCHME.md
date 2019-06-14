@@ -57,32 +57,32 @@ Exercise 2: Advanced Querying
 
 - Open SQL Server Configuration Manager
 - If you cannot find it
-    - use Run -> **compmgmt.msc**
-    - expand **Services And Applications**
-    - expand **SQL Configuration Manager**
+    - use Run -> <u>compmgmt.msc</u>
+    - expand <u>Services And Applications</u>
+    - expand <u>SQL Configuration Manager</u>
 
 +++
 
-- Find **SQL Server Network Configuration**
-- Find **TCP/IP** and **Enable** it
-- Right click **TCP/IP** 
-    - set IP Address 127.0.0.1 to **Enabled**
-    - set IP Address 127.0.0.1 to **TCP Port** to **1433**
+- Find <u>SQL Server Network Configuration</u>
+- Find <u>TCP/IP</u> and <u>Enable</u> it
+- Right click <u>TCP/IP</u> 
+    - set IP Address 127.0.0.1 to <u>Enabled</u>
+    - set IP Address 127.0.0.1 to <u>TCP Port</u> to <u>1433</u>
     
 +++
 
 - In SQL Server Management Studio
-    - Expand **Security**
-    - Right Click **Login** -> **New Login**
-    - Set **username** and **password**
-    - Under **Server Roles**, tick **sysadmin**
+    - Expand <u>Security</u>
+    - Right Click <u>Login</u> -> <u>New Login</u>
+    - Set <u>username</u> and <u>password</u>
+    - Under <u>Server Roles</u>, tick <u>sysadmin</u>
     
 +++
 
 - In SQL Server Management Studio
-    - Right Click the server -> **Properties**
-    - Click **Security**
-    - Set **SQL Server and Windows Authentication**
+    - Right Click the server -> <u>Properties</u>
+    - Click <u>Security</u>
+    - Set <u>SQL Server and Windows Authentication</u>
 
 ---
 
