@@ -75,9 +75,13 @@ typeorm init --name ProjectName --database mssql
 #### SQL Server Setup
 
 - Open SQL Server Configuration Manager
-    - If you cannot find it
+- If you cannot find it
     - use Run -> `compmgmt.msc`
-    - expand 'Services And Applications'
+    - expand `Services And Applications`
+    - expand `SQL Configuration Manager`
+
++++
+
 - Find `SQL Server Network Configuration`
 - Find `TCP/IP` and Enable it
 - Right click `TCP/IP` 
