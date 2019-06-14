@@ -51,6 +51,41 @@ Exercise 2: Advanced Querying
 
 ---
 
+### SQL Server Setup
+
++++
+
+- Open SQL Server Configuration Manager
+- If you cannot find it
+    - use Run -> `compmgmt.msc`
+    - expand `Services And Applications`
+    - expand `SQL Configuration Manager`
+
++++
+
+- Find `SQL Server Network Configuration`
+- Find `TCP/IP` and Enable it
+- Right click `TCP/IP` 
+    - set IP Address 127.0.0.1 to Enabled
+    - set IP Address 127.0.0.1 to TCP Port 1433
+    
++++
+
+- In SQL Server Management Studio
+    - Expand `Security`
+    - Right Click `Login` -> `New Login`
+    - Set `username` and `password`
+    - Under `Server Roles`, tick `sysadmin`
+    
++++
+
+- In SQL Server Management Studio
+    - Right Click the server -> `Properties`
+    - Click `Security`
+    - Set `SQL Server and Windows Authentication`
+
+---
+
 ### TypeORM: Migration Management
 
 +++
@@ -69,41 +104,6 @@ npm install -g typeorm
 // 
 typeorm init --name ProjectName --database mssql
 ```
-
-+++
-
-#### SQL Server Setup
-- Open SQL Server Configuration Manager
-- If you cannot find it
-    - use Run -> `compmgmt.msc`
-    - expand `Services And Applications`
-    - expand `SQL Configuration Manager`
-
-+++
-
-#### SQL Server Setup
-- Find `SQL Server Network Configuration`
-- Find `TCP/IP` and Enable it
-- Right click `TCP/IP` 
-    - set IP Address 127.0.0.1 to Enabled
-    - set IP Address 127.0.0.1 to TCP Port 1433
-    
-+++
-
-#### SQL Server Setup
-- In SQL Server Management Studio
-    - Expand `Security`
-    - Right Click `Login` -> `New Login`
-    - Set `username` and `password`
-    - Under `Server Roles`, tick `sysadmin`
-    
-+++
-
-#### SQL Server Setup
-- In SQL Server Management Studio
-    - Right Click the server -> `Properties`
-    - Click `Security`
-    - Set `SQL Server and Windows Authentication`
 
 ---
 
